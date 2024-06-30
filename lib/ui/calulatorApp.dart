@@ -34,58 +34,54 @@ class _CaculatorAppState extends State<CaculatorApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Expanded(
-                  child: Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          "RAD",
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.grey
-                          ),
-                        ),
-                        IconButton(
-                            onPressed: () {},
-                            icon: Icon(Icons.more_vert)
-                        )
-                      ],
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "RAD",
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.grey
+                      ),
                     ),
-                  )
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.more_vert)
+                    )
+                  ],
+                ),
               ),
-              Expanded(
-                  child: Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(15),
-                          alignment: Alignment.centerRight,
-                          child: Text(
-                            InputValue,
-                            style: const TextStyle(
-                              fontSize: 24,
-                              color: Colors.black,
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        InputValue,
+                        style: const TextStyle(
+                          fontSize: 24,
+                          color: Colors.black,
 
-                            ),
-                          ),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(15),
-                          alignment: Alignment.centerRight,
-                          child: Text(
-                            Value,
-                            style: const TextStyle(
-                                fontSize: 28,
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold
-                            ),
-                          ),
-                        )
-                      ],
+                      ),
                     ),
-                  )
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        Value,
+                        style: const TextStyle(
+                            fontSize: 28,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
               Expanded(
                   flex: 3,
